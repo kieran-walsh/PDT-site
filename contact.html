@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Kieran Walsh"/>
+    <meta name="keywords" content="CMU, fraternity, Phi Delta Theta, Pennsylvania Rho"/>
+    <meta name="description" content="Phi Delta Theta Pennsylvania Rho"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Phi Delta Theta PA Rho - Contact Us</title>
+    
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+
+<body>
+    <div id="top-row">
+        <header>
+            <a href="index.html">
+                <img src="images/logo-shield.png" alt="Phi Delta Theta Logo"/>
+                <div id="title">
+                    <h1>Phi Delta Theta</h1>
+                    <h2><i>Pennsylvania Rho</i></h2>
+                </div>
+            </a>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About &Phi;&Delta;&Theta;</a>
+            <a href="members.html">Our Chapter</a>
+            <a href="signup.html">Sign Up</a>
+            <a class="selected" href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <h3>Contact Us</h3>
+        <p id="description">Do you have any specific questions/comments that you would like us to address? 
+                            Please use the contact form or our chapter's contact information to get in touch with us.</p>
+        <div id="contact-left" class="left-col">
+            <h4>Contact Form</h4>
+            <div class="contact-form">
+                <br/>
+                <form id="contact-form" class="left-form" method="POST" onsubmit="return validate_contact()" action="scripts/handle-contact.php">
+                    <label for="name">Your name <sup>(required)</sup></label><br/>
+                    <input class="text" type="text" id="name" name="name" required/>
+                    <br/><br/>
+                    <label for="email">Your email address <sup>(required)</sup></label><br/>
+                    <input class="text" type="email" id="email" name="email" required/>
+                    <br/><br/>
+                    <label for="who-type">I am a/an... <sup>(required)</sup></label><br/>
+                    <select class="select" id="who-type" name="who-type" required>
+                        <option>Interested Student</option>
+                        <option>Parent</option>
+                        <option>CMU Faculty/Staff</option>
+                        <option>Alumni</option>
+                        <option>Other (please specify below)</option>
+                    </select>
+                    <br/><br/>
+                    <label for="message">Your message <sup>(required)</sup></label><br/>
+                    <textarea class="textarea" id="message" name="message" required></textarea>
+                    <br/><br/>
+                    <input class="submit" type="submit"/>
+
+                </form>
+            </div>
+        </div>
+        <div id="contact-right" class="right-col">
+            <h4><b><i>Contact our Chapter</i></b></h4>
+            <ul>
+                <li>1055 Morewood Ave, Pittsburgh, PA, 15213</li>
+                <li>Email our President, Omry Alfi: <a href="mailto:oalfi@andrew.cmu.edu">oalfi&#64;andrew&#46;cmu&#46;edu</a></li>
+                <li>Email the PA Rho Executive Board: <a href="mailto:phideltparho@gmail.com">phideltparho&#64;gmail&#46;com</a></li>
+                <li>Our <a href="https://www.facebook.com/CMUPhiDelt/" target="_blank">Facebook</a> and 
+                        <a href="https://www.instagram.com/phideltcmu/" target="_blank">Instagram</a> pages</li>
+            </ul>
+            <h4><b><i>Contact Phi Delta Theta General Headquarters (GHQ)</i></b></h4>
+            <ul>
+                <li>2 South Campus Ave, Oxford, OH 45056</li>
+                <li>(513) 523-6345</li>
+                <li>Fax: (513) 523-9200</li>
+                <li>Operating hours: 8 AM to 5 PM EST, Monday through Friday</li>
+                <li><a href="https://www.phideltatheta.org/contact/" target="_blank">GHQ Contact Form</a></li>
+            </ul>
+            <img id="contact-img" alt="Phi Delta Theta Logo" src="images/logo-contact.png"/>
+        </div>
+    </div>
+
+    <footer>
+        <p id="f-add">| Phi Delta Theta PA Rho | Carnegie Mellon University | 1055 Morewood Ave, Pittsburgh, PA 15213 |</p>
+        <p id="add-span"><span>| Phi Delta Theta PA Rho |</span><span>| Carnegie Mellon University |</span><span>| 1055 Morewood Ave, Pittsburgh, PA 15213 |</span></p>
+        
+        <div id="parho-soc" class="social-media">
+            <p>Find PA Rho on social media!</p>
+            <div id="parho-logos">
+                <a href="https://www.facebook.com/CMUPhiDelt/" target="_blank">
+                    <img src="images/facebook.png" alt="PA Rho Facebook"/></a>
+                <a href="https://www.instagram.com/phideltcmu/" target="_blank">
+                    <img src="images/insta.png" alt="PA Rho Instagram"/></a>
+            </div>
+        </div>
+        <div id="ghq-soc" class="social-media">
+            <p>Keep up to date with GHQ!</p>
+            <div id="ghq-logos">
+                <a href="https://www.facebook.com/PhiDeltaTheta" target="_blank">
+                    <img src="images/facebook.png" alt="GHQ Facebook"/></a>
+                <a href="https://twitter.com/intent/user?screen_name=phidelt" target="_blank">
+                    <img src="images/twitter.png" alt="GHQ Twitter"/></a>
+                <a href="http://www.linkedin.com/groups?gid=95210&trk=my_groups-b-grp-v" target="_blank">
+                    <img src="images/linked.png" alt="GHQ LinkedIn"/></a>
+                <a href="http://www.instagram.com/phideltatheta" target="_blank">
+                    <img src="images/insta.png" alt="GHQ Instagram"/></a>
+                <a href="http://www.youtube.com/user/phideltathetaghq" target="_blank">
+                    <img src="images/youtube.png" alt="GHQ YouTube"/></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
