@@ -1,0 +1,706 @@
+/* Colors
+Navy: 0, 43, 84 (#002B54)
+Azure: 0, 129, 198 (#0081C6)
+Gray: 123, 121, 121 (#7B7979)
+*/
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 100%;
+    line-height: 1.7em;
+    background-color: #FFFFFF;
+}
+
+/* Header */
+
+header img {
+    width: 6.75em;
+    float: left;
+}
+
+#title {
+    padding-top: 0.1em;
+}
+
+#top-row, footer, hr {
+    margin: 0 -10px;
+    padding: 0 10px;
+    background-color: #002B54;
+    color: #FFFFFF;
+}
+
+#top-row a {
+    text-decoration: none;
+    color: white;
+}
+
+#top-row {
+    margin-top: -0.3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.35em;
+    border-bottom: 5px solid #0081C6;
+}
+
+#title h2 {
+    margin-top: -0.75em;
+    font-weight: 400;
+}
+
+nav {
+    float: right;
+    margin-top: -2em;
+    margin-right: 1%;
+}
+
+nav a {
+    border: 1px solid #FFFFFF;
+    padding: 0.5em;
+}
+
+nav a.selected, a:hover {
+    background-color: #0081C6;
+}
+
+/* Footer */
+
+footer {
+    clear: both;
+    padding-bottom: 4em;
+    border-top: 5px solid #0081C6;
+}
+
+footer a:hover {
+    background-color: #002B54;
+}
+
+#f-add {
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+.social-media {
+    width: 45%;
+    margin-top: -2em;
+}
+
+.social-media p {
+    margin-bottom: 0em;
+    font-weight: 500;
+}
+
+#parho-soc {
+    float: left;
+    text-align: right;
+}
+
+#parho-logos{
+    margin-right: 70px;
+}
+
+#ghq-soc {
+    float: right;
+    text-align: left;
+}
+
+#ghq-logos{
+    margin-left: 10px;
+}
+
+.social-media img {
+    width: 2em;
+}
+
+#add-span {
+    display: none;
+    padding: 0.5em 0;
+}
+span {
+    display: none;
+    text-align: center;
+}
+
+/* Main Content */
+
+.main-content {
+    /* margin: -0.75em -0.3em -1em; */
+    margin: 0 10px 10px;
+    clear: both;
+    background-color: #FFFFFF;
+    padding-left: 5px; 
+    color: #002B54;
+}
+
+.main-content a:hover {
+    background-color: #FFFFFF;
+}
+
+h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #0081C6;
+}
+
+hr {
+    border: 1px solid #0081C6;
+}
+
+.main-content a {
+    text-decoration: none;
+    color: #0081C6;
+}
+
+.main-content a:hover {
+    text-decoration: underline;
+}
+
+/* Columns */
+
+.left-col, .right-col {
+    margin-bottom: 10px;
+}
+
+.left-col {
+    width: 48%;
+    float: left;
+    border-right: 1px dashed #7B7979;
+}
+
+.right-col {
+    width: 47%;
+    padding-left: 2%;
+    padding-right: 2.5%;
+    float: right;
+}
+
+.left-col h4, .right-col h4 {
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+/* Home page */
+
+#home-main {
+    padding-bottom: 0px;
+}
+
+#values h4 {
+    text-align: center;
+}
+
+#values li {
+    display: inline;
+    margin: 0 10% 0 10%;
+}
+
+#home-left {
+    width: 62%;
+}
+
+#home-right {
+    width: 33%;
+}
+
+.left-col .heading {
+    float: left;
+    margin-right: 2%;
+}
+
+#donate {
+    margin-top: 0;
+}
+
+#involved {
+    margin-bottom: 5px;
+}
+
+#donate, #involved {
+    margin-left: -3%;
+}
+
+#donate li, #involved li {
+    margin-left: 4%;
+    margin-right: -4%;
+}
+
+#news-list {
+    overflow-y: scroll;
+    border: 1px solid lightgray;
+    height: 150px;
+}
+
+#news-list li {
+    margin-left: -3%;
+}
+
+#slide-wrap {
+    background-color: #f6f6f6;
+}
+
+#main-slide {
+    max-width: 1110px;
+}
+
+/* Slideshow */
+
+.slideshow {
+    width: 100%;
+    position: relative;
+    margin: auto auto 10px;
+    border: 1px solid #0081C6;
+}
+
+.slides {
+    display: none;
+    background-color: #002B54;
+}
+
+.main-img {
+    width: 62%;
+    margin-bottom: -7px;
+}
+
+.signup-img {
+    width: 100%;
+    margin-bottom: -7px;
+    max-height: 425px;
+}
+
+.prev, .next {
+    background-color: #f6f6f6;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 0 0 0 65%;
+    position: absolute;
+    top: 20%;
+    width: 33%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slide-text {
+    width: 99%;
+    margin: 0;
+    padding: 0 0 0 1%;
+    border: 1px solid #0081C6;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* INVERSE COLOR SECTIONS */
+
+#values, #about-parho, #app {
+    margin-top: 5px;
+    border: 2px solid #0081C6;
+    background-color: #002B54;
+    color: white;
+    padding: 0 10px;
+}
+
+/* About PDT */
+
+#our-mission {
+    margin-top: -20px;
+}
+
+#about-house {
+    display: none;
+}
+
+#mission-text {
+    width: 80%;
+    float: left;
+}
+
+#arms-wrap {
+    display: inline-block;
+    width: 20%;
+}
+
+#arms {
+    display: block;
+    padding: 50px 0 0;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+#famous {
+    clear: both;
+    display: block;
+}
+
+#famous #list1 {
+    margin: 0 50px 15px 0;
+    float: left;
+}
+
+#health-safety {
+    clear: both;
+}
+
+/* Members */
+
+#glance {
+    border: 1px solid #002B54;
+}
+
+#insta {
+    display: none;
+}
+
+#app {
+    padding: 0 10px;
+    border: 2px solid #0081C6;
+    clear: both;
+}
+
+/* Code borrowed from W3Schools - How To Make an Accordion */
+/* Accordion */
+
+#accordion-container {
+    border: 1px solid #0081C6;
+}
+
+.accordion {
+    background-color: #002B54;
+    color: #FFF;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #0081C6;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active {
+    background-color: #0081C6;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #f6f6f6;
+    color: #002B54;
+    display: none;
+    overflow: hidden;
+}   
+
+/* Sign up */
+
+#see-action {
+    margin: -10px 0 10px;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+#signup-slides {
+    width: 90%;
+    border: 1px solid #0081C6;
+    max-width: 600px;
+}
+
+#neil {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+#house {
+    width: 550px;
+    display: block;
+    margin: 0 auto 20px;
+    border: 1px solid #0081C6;
+}
+
+/* Contact */
+
+form {
+    background-color: #f6f6f6;
+    border: 1px solid #0081C6;
+    padding: 10px;
+}
+
+#contact-left, #contact-right {
+    margin-top: -20px;
+}
+
+.left-form {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.text {
+    height: 1.5em;
+    width: 40%;
+}
+
+.select {
+    height: 2.3em;
+    width: 40%;
+}
+
+.textarea {
+    height: 10em;
+    width: 80%;
+}
+
+.submit {
+    height: 4em;
+    width: 20%;
+    background-color: #002B54;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#contact-img {
+    display: block;
+    margin: 0 10% 0;
+}
+
+/* Responsive */
+
+/* Mobile ONLY */
+
+@media screen and (max-width: 430px) {
+    #about-house {
+        width: 100%;
+        display: block;
+        border: 1px solid #0081C6;
+    }
+
+    #insta {
+        display: block;
+        width: 100%;
+    }
+
+    /* Slideshow  */
+    #main-slide {
+        padding: 0 0 200px;
+        background-color: #002B54;
+    }
+
+    #main-slide img{
+        width: 100%;
+    }
+
+    .caption {
+        width: 80%;
+        padding: 150px 10% 0;
+    }
+}
+
+/* SMALLER SCREENS */
+
+@media screen and (max-width: 800px) {
+    
+    /* Header */
+    #top-row {
+        padding: 10px;
+        margin: -10px -10px 0;
+    }
+
+    nav {
+        float: none;
+        margin: 0 7px;
+        text-align: left;
+    }
+
+    nav a {
+        font-size: 0.75em;
+    }
+    
+    /* General */
+    
+    .main-content {
+        margin: 0 5px 10px;
+    }
+    
+    .left-col {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px dashed #7B7979;
+    }
+
+    .right-col {
+        margin-top: 10px;
+        padding: 0;
+        clear: both;
+        width: 100%;
+    }
+
+    /* Footer */
+
+    footer {
+        margin: 0px -10px ;
+    }
+    
+    #parho-soc, #ghq-soc {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin: 0 0 -20px 0;
+    }
+
+    #parho-logos {
+        margin-right: 0;
+    }
+
+    #f-add {
+        display: none;
+    }
+
+    #add-span, span {
+        display: block;
+    }
+
+    /* Home */
+
+    #home-left {
+        width: 100%;
+    }
+
+    #home-right {
+        width: 100%;
+    }
+
+    #home-right h4 {
+        margin-top: -10px;
+    }
+
+    #donate, #involved {
+        margin-left: 0%;
+    }
+
+    #values li {
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
+
+    /* About */
+    
+    #our-mission {
+        padding-top: 20px;
+    }
+
+    #mission-text {
+        width: 100%;
+    }
+
+    #arms-wrap {
+        width: 100%;
+    }
+
+    #arms {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #list1 {
+        margin: 0;
+        float: none;
+    }
+
+    #list2 {
+        display: none;
+    }
+
+    /* Members */
+
+    #fence {
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+
+    /* Sign Up */
+
+    #house {
+        width: 100%;
+    }
+
+    #neil {
+        width: 100%;
+        display: none;
+        
+    }
+
+    /* Contact */
+    
+    #contact-right h4 {
+        margin-top: 20px;
+    }
+
+
+    #contact-img {
+        width: 90%;
+        margin: 0 auto 10px;
+    }
+
+    .submit {
+        width: 30%;
+    }
+
+    .text, .select {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (min-width: 801px) {
+
+}
